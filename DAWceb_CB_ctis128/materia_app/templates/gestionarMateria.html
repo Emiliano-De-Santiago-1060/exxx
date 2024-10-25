@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block tittle %} Gestion de materia {% endblock %}
+
+{% block cuerpo %}
+<h1> Gestionar  Materias</h1>
+
+{% for m in lasmaterias %}
+
+<li> {{m.codigo}} .-.-.-{{m.nombre}} .-.-.- {{m.credito}} </li>
+
+{% endfor %}
+{% endblock %}
